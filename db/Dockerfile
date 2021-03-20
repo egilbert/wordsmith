@@ -2,3 +2,4 @@ FROM postgres
 RUN mkdir -p /docker-entrypoint-initdb.d
 COPY words.sql /docker-entrypoint-initdb.d
 ENV POSTGRES_HOST_AUTH_METHOD=trust
+EXPOSE 5432
